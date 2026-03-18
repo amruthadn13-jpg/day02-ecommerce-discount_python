@@ -1,0 +1,29 @@
+amount=int(input("Enter the Total Purchased: \n Rs  "))
+
+discount=0
+total=0
+
+if amount<500:
+    print("No Discount!! The Total Amount is: Rs ")
+
+elif 500 <= amount <= 1000:
+    discount = 0.10 * amount
+    total= amount - discount
+    print("\nYou got 10% Discount!! \n The total amount is: Rs ",amount)
+    print("\nHere is your final amount: Rs ",total)
+
+elif 1000 <= amount <= 2000:
+    discount = 0.20 * amount
+    total= amount - discount
+    print("\nYou got 20% Discount!! \n The total amount is: Rs ", amount)
+    print("\nHere is your final amount: Rs ", total)
+else:
+    discount = 0.30 * amount
+    total = amount - discount
+    print("\nYou got 30% Discount!! \n The total amount is: Rs ", amount)
+    print("\nHere is your final amount: Rs ", total)
+
+print("Thanks for Choosing this!! Have a great day!")
+
+
+
